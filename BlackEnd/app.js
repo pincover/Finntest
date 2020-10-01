@@ -5,7 +5,7 @@ const bodyparser=require('body-parser');
 const session=require('express-session');
 const morgan = require('morgan');
 const path = require('path')
-const port = 3000
+const port = process.env.port || 3000
 
 
 const Login = require('./routes/login')
